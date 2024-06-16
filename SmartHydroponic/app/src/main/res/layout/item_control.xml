@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Item"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linPPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/wavePB"
+        app:layout_constraintEnd_toEndOf="@id/wavePB"
+        app:layout_constraintStart_toStartOf="@id/wavePB"
+        app:layout_constraintTop_toTopOf="@id/wavePB"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvPPMdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="test"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvPPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="PPM"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <com.yangp.ypwaveview.YPWaveView
+        android:id="@+id/wavePB"
+        style="@style/fontPoppins"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:animatorEnable="false"
+        app:behideColor="#609670"
+        app:borderColor="#515352"
+        app:borderWidthSize="4dp"
+        app:frontColor="#609651"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:max="100"
+        app:shapeType="circle"
+        app:strong="100"
+        app:textColor="@color/black"
+        app:textHidden="false"
+        tools:visibility="invisible" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EDEDED"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wavePB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "247582000053",
+    "firebase_url": "https://hidroponik-b8394-default-rtdb.firebaseio.com",
+    "project_id": "hidroponik-b8394",
+    "storage_bucket": "hidroponik-b8394.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247582000053:android:fd4017f52e0f7a1a9b4ffc",
+        "android_client_info": {
+          "package_name": "com.example.smarthydroponic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApzARUEEs32LEA0qGt9Vdc3DhhsmivVn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
